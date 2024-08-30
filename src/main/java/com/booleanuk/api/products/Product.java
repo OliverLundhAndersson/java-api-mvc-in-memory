@@ -1,7 +1,6 @@
 package com.booleanuk.api.products;
 
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
@@ -24,5 +23,9 @@ public class Product {
     public Product() {
         this.id = idCounter;
         idCounter++;
+    }
+
+    public void reduceCounter() {
+        idCounter--;
     }
 }
